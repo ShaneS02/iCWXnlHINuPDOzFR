@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Potential-Talents"
+version = "0.1.0"
+description = "Potential Talents Prediction Project"
+readme = "README.md"
+requires-python = ">=3.11"
+
+dependencies = [
+    "numpy==2.5.1",
+    "pandas==3.0.5",
+    "ipykernel==7.3.0",
+    "scikit-learn==1.9.0",
+    "matplotlib==3.11.1",
+    "seaborn==0.13.2",
+    "nltk==3.10.3"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
